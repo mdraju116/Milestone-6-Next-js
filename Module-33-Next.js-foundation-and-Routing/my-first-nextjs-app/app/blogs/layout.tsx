@@ -7,6 +7,7 @@ interface ChildProps{
 const PostLayout = ({children}:ChildProps) => {
     return (
         <div>
+            <h2>This is blogs layout</h2>
             {children}
         </div>
     );
