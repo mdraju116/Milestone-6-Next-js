@@ -1,6 +1,6 @@
 
 
-const Docs = () => {
+const About = () => {
     return (
         <div>
             <p>Hello Next Developer</p>
@@ -8,4 +8,4 @@ const Docs = () => {
     );
 };
 
-export default Docs;
+export default About;
