@@ -4,14 +4,17 @@ import React from 'react';
 const Navbar = () => {
 
     const links = <>
-         <li><Link href="/">Home</Link></li>
-        <li><a href='/about'>About</a> </li>
+        <li><Link href="/">Home</Link></li>     {/* using Link willn't reload the full site, simply shows the page */}
+        <li><a href='/about'>About</a> </li>    {/* using <a> will reload the full site */}
         <li><Link href='/contact'>Contact</Link></li>
         <li><Link href='/contact/devContact'>DevContact</Link></li>
+        <li><Link href="/blogs">Blog</Link></li>
         
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
+
+            {/* mobile screen -hamberger*/}
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,11 +28,14 @@ const Navbar = () => {
                 </div>
                 <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+
+            {/* large screen */} 
+             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
+            
             <div className="navbar-end">
                 <a className="btn">Sign Up</a>
             </div>

@@ -102,14 +102,19 @@ You don't want to create:
 
 
 
-📌Instead, use [id]:
+📌Instead, create [id] folder
 app/
 └── products/
     └── [id]/
         └── page.tsx
 
-Now:
+and create a normal route : <Link href="/products">Products</Link>
 
+and use url : http://localhost:3000/products/1
+or use url : http://localhost:3000/products/2
+or use url : http://localhost:3000/products/3.....
+
+Now:
 /products/1
 /products/2
 /products/50
