@@ -1,6 +1,11 @@
 
 /* 
 
+Follow this documentation: 
+https://nextjs.org/docs/app/getting-started/layouts-and-pages#creating-a-nested-route
+
+
+
 ✅✅ Dynamic routing
 Suppose you have products:
 
@@ -22,7 +27,7 @@ app/
     └── [id]/
         └── page.tsx
 
-and create a normal route : <Link href="/products">Products</Link>
+and create a normal route in Navbar.tsx: <Link href="/products">Products</Link>
 
 and use url : http://localhost:3000/products/1
 or use url : http://localhost:3000/products/2

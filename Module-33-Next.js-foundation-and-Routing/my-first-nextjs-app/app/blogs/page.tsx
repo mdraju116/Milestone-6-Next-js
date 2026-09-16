@@ -10,27 +10,27 @@ import BlogCard from "../components/BlogCard";
 
 const blogsData = [
   {
-    id: "1",
+    id: 1,
     title: "Getting Started with React",
     description: "Learn the basics of React and how to build modern user interfaces.",
   },
   {
-    id: "2",
+    id: 2,
     title: "Understanding Next.js",
     description: "A beginner-friendly introduction to Next.js and its powerful features.",
   },
   {
-    id: "3",
+    id: 3,
     title: "JavaScript Array Methods",
     description: "Learn useful JavaScript array methods like map, filter, and reduce.",
   },
   {
-    id: "4",
+    id: 4,
     title: "Introduction to TypeScript",
     description: "Understand how TypeScript makes JavaScript development safer and easier.",
   },
   {
-    id: "5",
+    id: 5,
     title: "Building Your First Full-Stack App",
     description: "Explore the basic concepts behind building a full-stack web application.",
   },
