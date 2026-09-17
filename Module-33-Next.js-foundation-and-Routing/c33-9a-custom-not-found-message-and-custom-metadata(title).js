@@ -98,7 +98,7 @@ notFound() = when to show it.
 
 
 
-############################## 2.Custom Metadata  ########################################
+############################## 2.Custom Metadata (i.e- custom title)  ########################################
 
 In Next.js App Router, you can set global metadata in the root app/layout.tsx, and then 
 override it for a specific page using that page's page.tsx.

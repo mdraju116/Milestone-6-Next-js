@@ -1,12 +1,17 @@
+"use client";
+import { usePathname } from "next/navigation";
+
 import Link from "next/link";
 import React from 'react';
 
 const Navbar = () => {
 
+     const pathname = usePathname();
+
     const links = <>
-        <li><Link href="/">Home</Link></li>     {/* using Link willn't reload the full site, simply shows the page */}
-        <li><a href='/about'>About</a> </li>    {/* using <a> will reload the full site */}
-        <li><Link href='/contact'>Contact</Link></li>
+        <li><Link href="/" className={pathname === "/" ? "text-blue-600 font-semibold" : ""}>Home</Link></li>     {/* using Link willn't reload the full site, simply shows the page */}
+        <li><a href='/about' className={pathname === "/about" ? "text-blue-600 font-semibold" : ""}>About</a> </li>    {/* using <a> will reload the full site */}
+        <li><Link href='/contact' className={pathname === "/contact" ? "text-blue-600 font-semibold" : ""}>Contact</Link></li>
         <li><Link href='/contact/devContact'>DevContact</Link></li>
         <li><Link href="/blogs">Blog</Link></li>
         <li><Link href="/dashboard">Dashboard</Link></li>
