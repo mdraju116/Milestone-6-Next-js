@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from '../components/Post';
+import Post from '../components/PostCard';
 import { PostType } from '../types/Poststype';
 
 const PostPage = async() => {

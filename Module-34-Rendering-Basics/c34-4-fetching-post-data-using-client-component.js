@@ -1,5 +1,8 @@
 /* 
 
+http://localhost:3000/posts
+
+
 ✅✅1=>posts/page.tsx
 
 import React from 'react';
@@ -30,7 +33,7 @@ export default PostPage;
 
 
 
-✅✅2=>components/Post.tsx
+✅✅2=>components/PostCard.tsx
 
 import React from 'react';
 import { PostType } from '../types/Poststype';
