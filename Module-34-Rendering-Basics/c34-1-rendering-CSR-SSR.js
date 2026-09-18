@@ -9,6 +9,22 @@ Rendering turns this into something the browser can display:
 Hello Raju
 
 
+➡️Next.js-এ "render" (রেন্ডার) শব্দের অর্থ হলো কোনো কোড বা ডেটাকে প্রসেস করে 
+ব্যবহারকারীর ব্রাউজারে দৃশ্যমান পৃষ্ঠা (page) বা দৃশ্য তৈরি করা বা প্রদর্শন করা।
+
+➡️সহজ কথায় 
+রেন্ডারিং (Rendering)কোডিং বা ওয়েব ডেভেলপমেন্টের ভাষায়, React বা Next.js-এর কম্পোনেন্টগুলোকে
+এইচটিএমএল (HTML) কোডে রূপান্তর করে স্ক্রিনে ফুটিয়ে তোলার প্রক্রিয়াকেই রেন্ডার বলা হয়।
+
+➡️Next.js-এ রেন্ডারিংয়ের ধরনNext.js বিভিন্ন উপায়ে পেজ রেন্ডার করতে পারে:
+Server-side Rendering (SSR): ব্যবহারকারী পেজ (রিকোয়েস্ট) করার পর সার্ভারে পেজটি রেন্ডার হয়ে ব্রাউজারে আসে।
+Client-side Rendering (CSR): ব্রাউজারে কোড পৌঁছানোর পর জাভাস্ক্রিপ্টের মাধ্যমে পেজ রেন্ডার হয়।
+Static Site Generation (SSG): বিল্ড করার সময় (Build time) পেজ আগে থেকেই রেন্ডার বা তৈরি করে রাখা হয়।
+
+
+
+
+
 ✅✅✅Types of Rendering :
 The important thing is that Next.js can render a page in different places and at different times.
 There are mainly 3 types of rendering :
