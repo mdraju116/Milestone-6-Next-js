@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-type FoodCardProps = {
+type MenuCardProps = {
     food: {
         id: number,
         dish_name: string,
@@ -11,7 +11,7 @@ type FoodCardProps = {
 
 }
 
-const FoodCard = ({ food }: FoodCardProps) => {
+const MenuCard = ({ food }: MenuCardProps) => {
     const { dish_name, image_link,origin_and_popularity } = food;
 
     return (
@@ -39,4 +39,4 @@ const FoodCard = ({ food }: FoodCardProps) => {
     );
 };
 
-export default FoodCard;
+export default MenuCard;
