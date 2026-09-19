@@ -28,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         
         <Navbar></Navbar>
         
-        <main>
+        <main className="flex-1">
           {children}
         </main>
         
