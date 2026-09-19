@@ -2,10 +2,12 @@ import React from 'react';
 import MenuCard from '../components/MenuCard';
 
  type FoodType = {
-        id: number,
+        id: string,
         dish_name: string,
         image_link: string,
-        origin_and_popularity:string
+        origin_and_popularity:string,
+        alternative_names:string
+    
     }
 
 

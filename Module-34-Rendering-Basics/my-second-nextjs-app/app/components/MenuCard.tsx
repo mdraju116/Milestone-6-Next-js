@@ -1,18 +1,20 @@
-import React from 'react';
+
 import Image from 'next/image';
+import Link from 'next/link';
 
 type MenuCardProps = {
     food: {
-        id: number,
+        id: string,
         dish_name: string,
         image_link: string,
-        origin_and_popularity:string
+        origin_and_popularity:string,
+        alternative_names:string
     }
 
 }
 
 const MenuCard = ({ food }: MenuCardProps) => {
-    const { dish_name, image_link,origin_and_popularity } = food;
+    const { dish_name, image_link,alternative_names} = food;
 
     return (
         <div className="card bg-base-100 shadow-sm">
@@ -26,10 +28,10 @@ const MenuCard = ({ food }: MenuCardProps) => {
                     <div className="badge badge-secondary">NEW</div>
                 </h2>
 
-                <p>{origin_and_popularity}</p>
+                <p>{alternative_names}</p>
 
                 <div className="card-actions justify-end">
-                    <button className="badge badge-outline">See Details</button>
+                    <Link href={`/menu/${food.id}`}><button className="badge badge-outline">See Details</button></Link>
                     <button className="badge badge-outline">Order Now</button>
                     
                 </div>
