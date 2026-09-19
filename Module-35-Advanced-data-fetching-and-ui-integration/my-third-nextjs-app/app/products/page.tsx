@@ -13,7 +13,11 @@ type ProductType = {
     }
 
 const getProducts =async(): Promise<ProductType[]>=>{
-    const response = await fetch('http://localhost:3001/products');
+    
+    // const response = await fetch('http://localhost:3001/products',{cache:"no-store"});     //SSR 
+    // const response = await fetch('http://localhost:3001/products',{cache:"force-cache"});  //SSG 
+    const response = await fetch('http://localhost:3001/products',{next:{revalidate:30}});    //ISR
+
     return response.json();
 }
 
@@ -24,6 +28,7 @@ const ProductPage = async() => {
     return (
         <div>
                 <h2 className='text-center text-xl font-bold mb-10'>No of Products: {products.length}</h2>
+
                 <div className='grid grid-cols-3 gap-4'>
                     {
                         products.map((product)=><ProductCard key={product.id} product={product}></ProductCard>)

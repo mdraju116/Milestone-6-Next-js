@@ -17,10 +17,11 @@ type ProductCardProps = {
 
 
 const ProductCard = ({ product }: ProductCardProps) => {
-    const { id, title, price, description, category, image } = product;
+    const {  title, price, description, category, image } = product;
 
     return (
         <div className="card bg-base-100 shadow-sm">
+            
             <figure className="w-full h-56 flex justify-center items-center">
                 <Image
                     src={image}
@@ -30,8 +31,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
                     className="w-full h-full object-contain"
                 />
             </figure>
+
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{title}</h2>
+                <h2 className='text-xl font-light'>Category : {category}</h2>
+                <h2 className='text-xl font-bold text-red-500'>Price : {price}</h2>
                 <p>{description}</p>
                 <div className="card-actions">
                     <button className="btn btn-primary">Buy Now</button>
