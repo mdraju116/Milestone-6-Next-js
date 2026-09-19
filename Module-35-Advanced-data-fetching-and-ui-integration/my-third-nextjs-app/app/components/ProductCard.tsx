@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 type ProductCardProps = {
     product: {
@@ -39,6 +40,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 <p>{description}</p>
                 <div className="card-actions">
                     <button className="btn btn-primary">Buy Now</button>
+                    
+                    <Link href={`/products/${product.id}`}><button className="btn btn-primary">Show Details</button></Link>
                 </div>
             </div>
         </div>
