@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Bluetooth Headphones",
+      "price": 59.99,
+      "description": "Comfortable wireless headphones with active noise cancellation and up to 30 hours of battery life.",
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "rating": 4.5,
+      "stock": 25
+    },
+    {
+      "id": 2,
+      "title": "Mechanical Gaming Keyboard",
+      "price": 79.99,
+      "description": "RGB mechanical keyboard with responsive switches, customizable lighting, and a durable aluminum frame.",
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "rating": 4.7,
+      "stock": 18
+    },
+    {
+      "id": 3,
+      "title": "Smart Fitness Watch",
+      "price": 129.99,
+      "description": "Smart fitness watch with heart-rate monitoring, sleep tracking, step counting, and multiple sports modes.",
+      "category": "Wearables",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "rating": 4.4,
+      "stock": 32
+    },
+    {
+      "id": 4,
+      "title": "Premium Laptop Backpack",
+      "price": 45.5,
+      "description": "Water-resistant laptop backpack with multiple compartments and a padded section for laptops up to 15.6 inches.",
+      "category": "Accessories",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "rating": 4.6,
+      "stock": 40
+    },
+    {
+      "id": 5,
+      "title": "Running Sports Shoes",
+      "price": 89.99,
+      "description": "Lightweight running shoes designed with breathable materials and responsive cushioning for everyday training.",
+      "category": "Footwear",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "rating": 4.3,
+      "stock": 22
+    },
+    {
+      "id": 6,
+      "title": "Stainless Steel Water Bottle",
+      "price": 24.99,
+      "description": "Double-wall insulated stainless steel bottle that keeps drinks cold for 24 hours and hot for 12 hours.",
+      "category": "Lifestyle",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+      "rating": 4.8,
+      "stock": 65
+    },
+    {
+      "id": 7,
+      "title": "Portable Bluetooth Speaker",
+      "price": 49.99,
+      "description": "Compact waterproof Bluetooth speaker with powerful sound, deep bass, and up to 12 hours of playback.",
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+      "rating": 4.5,
+      "stock": 30
+    },
+    {
+      "id": 8,
+      "title": "Classic Cotton T-Shirt",
+      "price": 19.99,
+      "description": "Soft and breathable 100% cotton T-shirt with a comfortable regular fit for everyday wear.",
+      "category": "Clothing",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "rating": 4.2,
+      "stock": 75
+    },
+    {
+      "id": 9,
+      "title": "Ergonomic Office Chair",
+      "price": 199.99,
+      "description": "Ergonomic office chair featuring adjustable lumbar support, armrests, height, and a breathable mesh back.",
+      "category": "Furniture",
+      "image": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8",
+      "rating": 4.6,
+      "stock": 12
+    },
+    {
+      "id": 10,
+      "title": "USB-C Fast Charger",
+      "price": 29.99,
+      "description": "Compact 65W USB-C fast charger compatible with smartphones, tablets, laptops, and other USB-C devices.",
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0",
+      "rating": 4.7,
+      "stock": 50
+    }
+  ]
+}

@@ -122,13 +122,8 @@ const blogsData = [
   },
 ];
 
-const BlogDetails = async ({
-  params,
-}: {
-  params: Promise<{ postid: string }>;
-}) => {
+const BlogDetails = async ({params,}: {params: Promise<{ postid: string }>;}) => {
   const { postid } = await params;
-
   const blog = blogsData.find((blog) => blog.id === parseInt(postid));
 
   return (

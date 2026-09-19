@@ -1,3 +1,8 @@
+/* 
+
+📌📌Method-3 is best for use .
+
+
 
 // fetch-data: method-2
 const getPosts =async()=>{
@@ -51,3 +56,5 @@ const PostPage = async() => {
 };
 
 export default PostPage;
+
+*/
