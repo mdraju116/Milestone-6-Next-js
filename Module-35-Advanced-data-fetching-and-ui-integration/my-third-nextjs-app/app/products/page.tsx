@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
+import UserName from "../components/UserName";
 
 type ProductType = {
       "id": number,
@@ -27,6 +28,9 @@ const ProductPage = async() => {
 
     return (
         <div>
+
+                <UserName  />   {/* //📌here the the useContext is used Indirectly */}
+
                 <h2 className='text-center text-xl font-bold mb-10'>No of Products: {products.length}</h2>
 
                 <div className='grid grid-cols-3 gap-4'>
