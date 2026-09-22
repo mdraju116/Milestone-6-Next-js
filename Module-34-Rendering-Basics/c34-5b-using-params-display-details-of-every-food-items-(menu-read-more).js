@@ -155,7 +155,7 @@ Now we can display:
 ######################################### Full code ###########################################
 
 ✅✅Step 8 — Complete app/menu/[menuid]/page.tsx
-Here is the complete version:
+
 
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -168,7 +168,7 @@ type FoodType = {
   origin_and_popularity: string;
 };
 
-const MenuDetails = async ({params,}: {params: Promise<{ menuid: string }>;}) => {
+const MenuDetails = async ({params,}: {params: Promise<{ menuid: string }>}) => {
 
   // 1. Get ID from URL
   const { menuid } = await params;
@@ -184,12 +184,11 @@ const MenuDetails = async ({params,}: {params: Promise<{ menuid: string }>;}) =>
   const foods: FoodType[] = fooddata.data;
 
   // 4. Find matching food
-  const food = foods.find(
-    (food) => food.id === menuid
-  );
+  const food = foods.find((food) => food.id === menuid);
+
   if (!food) {
-  notFound();
-}
+    notFound();
+  }
 
   return (
     <div className="max-w-4xl mx-auto p-5">

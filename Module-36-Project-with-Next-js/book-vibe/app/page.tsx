@@ -1,12 +1,12 @@
 
 import Banner from "./components/homepage/Banner";
-import Books from "./components/homepage/Books";
+import PopularBooks from "./components/homepage/PopularBooks";
 
 export default function Home() {
   return (
     <div>
       <Banner></Banner>
-      <Books></Books>
+      <PopularBooks></PopularBooks>
     </div>
   );
 }

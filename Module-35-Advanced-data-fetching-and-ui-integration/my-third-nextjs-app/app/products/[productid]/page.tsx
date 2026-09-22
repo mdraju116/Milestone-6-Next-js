@@ -30,6 +30,8 @@ const ProductDetailsPage = async ({ params }: { params: Promise<{ productid: str
     const { productid } = await params;
 
     const response = await fetch(`http://localhost:3001/products/${productid}`);
+    // /${productid} evabe fetch korle find korte hobe na r
+    
     const product: ProductType = await response.json();
 
     return (

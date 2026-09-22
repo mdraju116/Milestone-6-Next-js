@@ -1,5 +1,6 @@
 import BookType from "@/app/types/bookstype";
 import Image from "next/image";
+import Link from "next/link";
 
 interface BooksProps {
     book: BookType,
@@ -55,6 +56,13 @@ const BookCard = ({ book }: BooksProps) => {
                     {book.rating}
                     <span>⭐</span>
                 </span>
+            </div>
+
+            <div >
+                <Link href={`/bookdetails/${book.bookId}`}>
+                     <button className="btn w-full rounded-xl border-0 bg-green-500 text-white transition-all hover:bg-blue-600">View Details
+                    </button>
+                </Link>
             </div>
         </div>
 
