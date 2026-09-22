@@ -1,7 +1,7 @@
 import BookType from "@/app/types/bookstype";
 import Link from "next/link";
 import Image from "next/image";
-import { UserRound, BookOpen, CalendarDays, LocationEditIcon, LocateIcon } from "lucide-react";
+import { UserRound, BookOpen, LocateIcon } from "lucide-react";
 
 const ListedBooksCard = ({ book }: { book: BookType }) => {
     return (

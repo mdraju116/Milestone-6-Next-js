@@ -1,3 +1,13 @@
+/* 
+loading=>  bookvibe/loading.tsx,    (Gloabal)
+           bookdetails/loading.tsx ,   (2nd Nearest)
+           bookdetails/[bid]/loading.tsx (1st Nearest)
+
+
+
+Sorting:
+=>listedbooks/page.tsx
+
 "use client"
 
 import { useContext, useState } from 'react';
@@ -10,7 +20,7 @@ const ListedBooksPage = () => {
     // console.log("ReadBooksList", readBooks);
 
 
-    //sorting state and function
+//sorting state and function
     const [sortby, setSortby] =useState <"rating" |"pages" | "year">("rating");
     const sortBooks =(books:BookType[])=>{
         const sortedBooks = [...books];
@@ -30,12 +40,20 @@ const ListedBooksPage = () => {
     const sortedReadBooks = sortBooks(readBooks);
     const sortedWishlistBooks = sortBooks(wishListesBooks);
 
+
+
+
     return (
         <div className='container mx-auto px-24 my-8 '>
 
             <h2 className='font-bold text-xl text-center bg-base-300 shadow-sm py-15 mb-10'>Listed Books</h2>
 
-            {/* Sorting */}
+
+
+
+
+
+            /* Sorting 
             <div className='text-center '>
                 
                 <select 
@@ -52,8 +70,12 @@ const ListedBooksPage = () => {
 
            </div>      
 
-            {/* Tabs */}
-            {/* ReadBooks Tab*/}
+
+
+
+
+            /* Tabs 
+            /* ReadBooks Tab
             <div className="tabs tabs-lift">
                 <input type="radio" name="my_tabs_3" className="tab" aria-label={`Read Books (${readBooks.length})`} />
 
@@ -74,7 +96,7 @@ const ListedBooksPage = () => {
                 </div>
 
 
-                {/* Wishlist Books Tab*/}
+                /* Wishlist Books Tab
                 <input type="radio" name="my_tabs_3" className="tab" aria-label={`Wishlist Books (${wishListesBooks.length})`} defaultChecked />
 
                 <div className="tab-content bg-base-100 border-base-300 p-6 space-y-10">
@@ -101,3 +123,8 @@ const ListedBooksPage = () => {
 };
 
 export default ListedBooksPage;
+
+
+
+
+*/

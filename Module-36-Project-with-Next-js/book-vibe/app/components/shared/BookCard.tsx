@@ -12,7 +12,7 @@ const BookCard = ({ book }: BooksProps) => {
        <div className="bg-base-100 rounded-xl p-5 shadow-[0_0_15px_2px_rgba(0,0,0,0.10)]">
 
             {/* Book Image */}
-            <div className="bg-[#F3F3F3] rounded-lg p-8 h-72 flex justify-center items-center">
+            <div className="bg-[#F3F3F3] rounded-lg p-4 h-60 flex justify-center items-center">
                 <Image
                     src={book.image}
                     alt={book.bookName}
@@ -23,7 +23,7 @@ const BookCard = ({ book }: BooksProps) => {
             </div>
 
             {/* Badges */}
-            <div className="flex  justify-between items-center gap-1  mt-5">
+            <div className="flex  justify-between items-center gap-1  mt-2">
                 {/* <span className="badge badge-success  badge-soft">
                  */}
                 <span className="badge bg-[#23be0a]/8 text-[#1cd400] border-none">
@@ -36,20 +36,20 @@ const BookCard = ({ book }: BooksProps) => {
             </div>
 
             {/* Book Name */}
-            <h2 className="text-xl font-bold mt-4">
+            <h2 className="text-xl font-bold mt-2">
                 {book.bookName}
             </h2>
 
             {/* Author */}
-            <p className="text-gray-500 mt-2">
+            <p className="text-gray-500 ">
                 By: {book.author}
             </p>
 
             {/* Dashed HR */}
-            <div className="border-t border-dashed border-gray-300 my-4"></div>
+            <div className="border-t border-dashed border-gray-300 mt-2"></div>
 
             {/* Category & Rating */}
-            <div className="flex justify-between items-center text-gray-600">
+            <div className="flex justify-between items-center text-gray-600 mt-2">
                 <span className="font-mediu">{book.category}</span>
 
                 <span className="flex items-center gap-1">
@@ -58,7 +58,7 @@ const BookCard = ({ book }: BooksProps) => {
                 </span>
             </div>
 
-            <div >
+            <div className="mt-2" >
                 <Link href={`/bookdetails/${book.bookId}`}>
                      <button className="btn w-full rounded-xl border-0 bg-green-500 text-white transition-all hover:bg-blue-600">View Details
                     </button>
