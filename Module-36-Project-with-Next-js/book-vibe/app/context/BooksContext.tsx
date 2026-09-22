@@ -7,6 +7,9 @@ import BookType from "../types/bookstype";
 interface BookContextProps{
     readBooks:BookType[],
     setReadBooks:React.Dispatch<React.SetStateAction<BookType[]>>,
+    wishListesBooks:BookType[],
+    setWishListedBooks:React.Dispatch<React.SetStateAction<BookType[]>>,
+
     
     
 }
@@ -14,6 +17,9 @@ interface BookContextProps{
 export const BooksContext =createContext <BookContextProps>({
     readBooks:[],
     setReadBooks: () => {},
+    wishListesBooks:[],
+    setWishListedBooks:()=>{},
+
 
 })
 
@@ -22,10 +28,11 @@ export const BooksContext =createContext <BookContextProps>({
 const BooksProvider = ({ children }: { children: ReactNode }) => {
 
     const [readBooks, setReadBooks]=useState<BookType[]>([]);
+    const [wishListesBooks, setWishListedBooks] =useState<BookType[]>([]);
 
     const sharedData={
         readBooks,setReadBooks,
-
+        wishListesBooks,setWishListedBooks
     }
 
 

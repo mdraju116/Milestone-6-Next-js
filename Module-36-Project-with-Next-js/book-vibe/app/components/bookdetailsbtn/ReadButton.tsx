@@ -11,7 +11,7 @@ const ReadButton = ({book}:{book:BookType}) => {
 
     const handleReadBooks = ()=>{
         setReadBooks([...readBooks,book]);
-        alert("Book added to readbooks successfully.")
+        alert(`You have read "${book.bookName}".`)
     }
 
     return (
