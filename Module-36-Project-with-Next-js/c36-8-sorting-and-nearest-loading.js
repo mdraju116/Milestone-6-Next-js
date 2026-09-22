@@ -1,11 +1,11 @@
 /* 
-loading=>  bookvibe/loading.tsx,    (Gloabal)
+✅✅1.loading=>  bookvibe/loading.tsx,    (Gloabal)
            bookdetails/loading.tsx ,   (2nd Nearest)
            bookdetails/[bid]/loading.tsx (1st Nearest)
 
 
 
-Sorting:
+✅✅2.Sorting:
 =>listedbooks/page.tsx
 
 "use client"

@@ -1,9 +1,10 @@
-import React from 'react';
+
+import GraphChart from '../components/shared/GraphChart';
 
 const PagestoRead = () => {
     return (
         <div>
-            Pages to Read.
+            <GraphChart></GraphChart>
         </div>
     );
 };
