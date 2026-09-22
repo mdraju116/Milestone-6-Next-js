@@ -2,6 +2,7 @@
 import BookType from "@/app/types/bookstype";
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import ReadButton from "@/app/components/bookdetailsbtn/ReadButton";
 
 
 
@@ -111,9 +112,8 @@ const SingleBookDetails = async ({ params }: { params: Promise<{ bid: number }> 
 
                     {/* Buttons */}
                     <div className="card-actions mt-4 gap-2">
-                        <button className="btn btn-outline">
-                            Read
-                        </button>
+                        <ReadButton book={book} />
+                        
 
                         <button className="btn btn-accent text-white">
                             Wishlist
