@@ -6,6 +6,8 @@ const Navbar = () => {
     const links = <>
 
         <li><Link href={'/'}>Home</Link></li>
+        <li><Link href={'/bookdetails'}>All Books</Link></li>
+        
         <li><Link href={'/listedbooks'}>Listed Books</Link></li>
         <li><Link href={'/pagestoread'}>Pages to Read</Link></li>
 

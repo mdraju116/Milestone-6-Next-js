@@ -3,6 +3,7 @@
 import { BooksContext } from "@/app/context/BooksContext";
 import BookType from "@/app/types/bookstype";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 
 
 const ReadButton = ({book}:{book:BookType}) => {
@@ -11,7 +12,7 @@ const ReadButton = ({book}:{book:BookType}) => {
 
     const handleReadBooks = ()=>{
         setReadBooks([...readBooks,book]);
-        alert(`You have read "${book.bookName}".`)
+        toast.success(`You have read "${book.bookName}".`)
     }
 
     return (
