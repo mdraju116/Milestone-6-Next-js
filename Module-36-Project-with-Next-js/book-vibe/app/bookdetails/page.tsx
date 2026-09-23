@@ -3,10 +3,16 @@ import BookCard from "@/app/components/shared/BookCard";
 
 
 const getBooks = async (): Promise<BookType[]> => {
-    const response = await fetch("http://localhost:3000/data/booksData.json");
-    const booksdata = await response.json();
-    return booksdata;
+    try{
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data/booksData.json`);
+        const booksdata = await response.json();
+        return booksdata;
 
+    }catch (error){
+        console.error("Error fetching data:",error);
+        return [];
+    }
+    
 }
 
 
